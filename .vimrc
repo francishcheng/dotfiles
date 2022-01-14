@@ -33,7 +33,6 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | end
 " NERDTree configuration
 
-color snazzy
 " 设置搜索
 set backspace=2
 exec "nohlsearch"
@@ -42,8 +41,8 @@ set hlsearch
 set ignorecase
 set smartcase
 set cursorline
+set relativenumber
 set clipboard+=unnamed
-set number
 set mouse=c
 set nocompatible            " be iMproved, required
 set wildmenu       	    " 设置提示菜单
