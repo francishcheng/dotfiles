@@ -18,10 +18,12 @@ map Q :q<CR>
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
-map <leader>r <Action>(ReformatCode)
+map <leader>f <Action>(ReformatCode)
 
 "" Map <leader>d to start debug
 map <leader>d <Action>(Debug)
+
+map <leader>x <Action>(Run)
 
 "" Map \b to toggle the breakpoint on the current line
 map \b <Action>(ToggleLineBreakpoint)
@@ -40,3 +42,5 @@ map J 0
 map K $
 set relativenumber
 map m ysiw
+
+
